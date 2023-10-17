@@ -18,7 +18,7 @@ jobs:
       - checkout
       - run:
           name: PIPE
-          command: echo << pipeline.parameters.GREP >>
+          command: echo << pipeline.parameters >>
       - ruby/install-deps
 
 # Orchestrate jobs using workflows
