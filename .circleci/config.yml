@@ -18,7 +18,7 @@ jobs:
       - checkout
       - run:
           name: PIPE
-          command: echo << pipeline >>
+          command: echo "hello"
       - ruby/install-deps
 
 # Orchestrate jobs using workflows
