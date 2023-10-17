@@ -17,8 +17,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Which bundler?
-          command: bundle -v
+          name: PIPE
+          command: echo << pipeline.parameters.GREP >>
       - ruby/install-deps
 
 # Orchestrate jobs using workflows
